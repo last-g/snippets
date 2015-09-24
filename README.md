@@ -9,6 +9,7 @@ Common links
 
  * http://www.cplusplus.com/reference/
  * https://cmake.org/documentation/
+ * http://www.boost.org/doc/libs/
 
 Structure
 ---------
