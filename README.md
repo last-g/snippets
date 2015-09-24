@@ -26,3 +26,12 @@ Reads all contents of one file and outputs it in file and stdout. Shows simple w
 #### btee 
 
 Reads all contents of one binary file and outputs it in file and stdout. Shows work with iterator.
+
+
+Build
+-----
+
+ * `mkdir -p out`
+ * `cd out`
+ * `cmake ..`
+ * `make`
