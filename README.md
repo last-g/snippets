@@ -24,9 +24,14 @@ Simple "hello world". Prints constant string to stdout and shows namespace usage
 Reads all contents of one file and outputs it in file and stdout. Shows simple work with files and args.
 
 
-#### btee 
+#### btee
 
 Reads all contents of one binary file and outputs it in file and stdout. Shows work with iterator.
+
+
+#### fibbs
+
+Reads number N from args and prints N fibonacci numbers. Shows usage of headers, boost library and vector.
 
 
 Build
