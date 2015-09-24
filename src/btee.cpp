@@ -20,16 +20,17 @@ int main(int argc, char *argv[])
     ifstream fin(argv[1], ios::binary);
     ofstream fout(argv[2], ios::out | ios::app | ios::binary);
 
+    // cache creating if empty iterator
+    const auto&& end  = istreambuf_iterator<char>();
 
-
-    auto&& end  = istreambuf_iterator<char>();
-
+    // Going throw iterator
     for(auto&&it = istreambuf_iterator<char>(fin); it != end; ++it)
     {
         cout << *it;
         fout << *it;
     }
 
+    // Ensure all data were flushed
     cout.flush();
     fout.flush();
 

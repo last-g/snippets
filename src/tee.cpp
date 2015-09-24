@@ -14,15 +14,18 @@ int main(int argc, char * argv[])
         exit(WRONG_ARGS);
     }
 
-
+    // open file for read
     ifstream fin(argv[1]);
+
+    // open file for write&append
     ofstream fout(argv[2], ios::out | ios::app);
 
+    // create buffer line
     string line;
 
-    while (!fin.eof())
+    while (!fin.eof()) // checks if file is on it's end, this would be false only after failed read
     {
-        if (getline(fin, line))
+        if (getline(fin, line)) // returns count of bytes was read, returns 0 on when end of file reached
         {
             fout << line << std::endl;
             cout << line << std::endl;
